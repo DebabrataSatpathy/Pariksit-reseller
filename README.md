@@ -1,1 +1,1 @@
-# Pariksit-reseller
+# Pariksit-Reseller
