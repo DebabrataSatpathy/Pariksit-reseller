@@ -1,3 +1,24 @@
+
+<?php
+
+if (isset($_POST['submit'])) {
+	$to = "tanishahuby@gmail.com";
+	$name = $_POST['name'];
+	$from = $_POST['email'];
+	$subject = $_POST['subject'];
+	$msg = $_POST['message'];
+	$header = "From:".$from;
+	if (mail($to, $subject, $msg,$header)) {
+		echo "<script>alert('Mail Sent Success');</script>";
+		
+	}else{
+		echo "<script>alert('Mail Not Sent !!');</script>";
+
+	}
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -476,20 +497,20 @@
 				<!--Grid column-->
 				<div class="col-lg-2 col-md-2 col-sm-3"></div>
 				<div class="col-lg-8 col-md-8 col-sm-6 text-center">
-					<form id="contact-form" name="contact-form" method="POST">
+					<form id="contact-form" name="contact-form" action="index.php" method="POST">
 					  
 						<!--Grid row-->
 						<div class="row" style="padding-bottom: 5vh;">
 						   
 							<!--Grid column-->
 							<div class="col-md-6" id="myname">
-								<input type="text" placeholder="Your name" style="color: white" id="name" required class="form-control">
+								<input type="text" placeholder="Your name" autocomplete="off" name="name" style="color: white" id="name" required class="form-control">
 							</div>
 							<!--Grid column-->
 		
 							<!--Grid column-->
 							<div class="col-md-6">
-								<input type="text" placeholder="Your email" style="color: white" id="email" required class="form-control">
+								<input type="email" placeholder="Your email" autocomplete="off" required name="email" style="color: white" id="email" required class="form-control">
 							</div>
 							<!--Grid column-->
 		
@@ -499,7 +520,7 @@
 						<!--Grid row-->
 						<div class="row" style="padding-bottom: 5vh;">
 							<div class="col-md-12">
-								<input type="text" placeholder="Subject" style="color: white" id="subject" class="form-control">
+								<input type="text" placeholder="Subject" autocomplete="off" required name="subject" style="color: white" id="subject" class="form-control">
 							</div>
 						</div>
 						<!--Grid row-->
@@ -509,15 +530,15 @@
 		
 							<!--Grid column-->
 							<div class="col-md-12">
-								<textarea type="text" placeholder="Your message" style="color: white" id="message" rows="3" class="form-control md-textarea"></textarea>
+								<textarea type="text" autocomplete="off" required placeholder="Your message" name="message" style="color: white" id="message" rows="3" class="form-control md-textarea"></textarea>
 							</div>
 						</div>
 						<!--Grid row-->
 						<div class="row" style="padding-bottom: 15vh;">
 							<div class="col-md-12">
-									<input type="submit" id="submit" value="Send" style="display: none;">
-									<label for="submit" class="submit text-center waves-effect ml-auto" style="margin-top: 40px; cursor: pointer; font-weight: 700;">Send 
-									<i class="fas fa-arrow-right" style="display: inline-flex; left: 100%; float: right;"></i></label>
+									<!-- <input type="submit" id="submit" value="Send" style="display: none;"> -->
+									<button type="submit" name="submit" class="submit text-center waves-effect ml-auto" style="margin-top: 40px; cursor: pointer; font-weight: 700;">Send 
+									<i class="fas fa-arrow-right" style="display: inline-flex; left: 100%; float: right;"></i></button>
 							</div>
 						</div>
 					</form>
