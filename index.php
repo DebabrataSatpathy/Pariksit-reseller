@@ -4,11 +4,13 @@
 if (isset($_POST['submit'])) {
 	$to = "m.pariksit@gmail.com";
 	$name = $_POST['name'];
-	$from = $_POST['email'];
-	$subject = $_POST['subject'];
+	$mail = $_POST['email'];
+	$phone = $_POST['phone'];
 	$msg = $_POST['message'];
-	$header = "From:".$from;
-	if (mail($to, $subject, $msg,$header)) {
+	$subject = "Query Regarding Pariksit Reseller";
+	$sendMessage = "You have received a query as \n".$msg."\nFrom ".$name."\nWhose contact number is ".$phone." and Email is ".$mail.".";
+	$header = "From: yogesh@pariksit.com";
+	if (mail($to, $subject, $sendMessage,$header)) {
 		echo "<script>alert('Mail Sent Success');</script>";
 		
 	}else{
@@ -19,7 +21,6 @@ if (isset($_POST['submit'])) {
 
 ?>
 
-<!DOCTYPE html>
 <html>
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
@@ -538,7 +539,7 @@ if (isset($_POST['submit'])) {
 						<!--Grid row-->
 						<div class="row" style="padding-bottom: 5vh;">
 							<div class="col-md-12">
-								<input type="tel" placeholder="Phone number" autocomplete="off" required name="phone" style="color: white" id="phone" class="form-control">
+								<input type="text" minlength="10" maxlength="10" placeholder="Phone number" autocomplete="off" required name="phone"  style="color: white" id="phone" class="form-control">
 							</div>
 						</div>
 						<!--Grid row-->
