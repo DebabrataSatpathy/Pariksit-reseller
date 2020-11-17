@@ -95,23 +95,41 @@ if (isset($_POST['submit'])) {
 							</div>
 							<div class="wrapper">
 								<nav class="hamnav">
-									<ul>
-										<li><a href="#price">Pricing</a></li>
-										<li><a href="#about">About us</a></li>
-										<li><a href="#reach">Contact us</a></li>
-									</ul>
+									<div>
+										<ul>
+											<li class="first-link">
+												<a class="rounded waves-effect" href="https://pariksit.com/"> Home </a>
+											</li>
+
+											<li class="second-link">
+												<a class="rounded waves-effect" href="#price"> Pricing </a> 
+											</li>
+											
+											<li class="third-link">
+												<a class="rounded waves-effect" href="#about"> About us </a>
+											</li>
+											
+											<li class="fourth-link">
+												<a class="rounded waves-effect" href="#reach"> Contact us </a>
+											</li>
+										</ul>
+									</div>
 								</nav>
 							</div>
 
 				<!-- navbar -->
 				<div class="text-block">
 					<div class="row">
-						<div class="col-lg-3 col-md-3 col-sm-3"></div>
-						<div class="col-lg-3 col-md-3 col-sm-3"></div>
-						<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="col-lg-2 col-md-2 col-sm-2"></div>
+						<div class="col-lg-2 col-md-2 col-sm-2"></div>
+						<div class="col-lg-8 col-md-8 col-sm-8">
 							<nav class="mb-1 navbar navbar-expand-lg">
 								<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
 									<ul class="navbar-nav ml-auto">
+									    <li class="nav-item">
+											<a class="nav-link" href="https://pariksit.com/"> Home </a>
+										</li>
+										<span> | </span>
 										<li class="nav-item">
 											<a class="nav-link" href="#price"> Pricing </a> 
 										</li>
@@ -134,7 +152,7 @@ if (isset($_POST['submit'])) {
 	    </div>
 	</div> 
 
-	<section class="section-1" id="about" style="padding-top: 50px; margin-bottom: 5px; height: auto; padding-bottom: 25vh;">
+	<section class="section-1" id="about" style="padding-top: 50px; margin-bottom: 15vh; height: auto; padding-bottom: 25vh;">
 		<div class="mainbox">
 			<div class="container-fliud" style="margin: 0% 14%;">
 				<div class="row" style="width: 100%; align-items: center; justify-content: center; text-align: center;">
@@ -161,7 +179,7 @@ if (isset($_POST['submit'])) {
 
 	<section class="section-2" style="padding-top: 10%; margin-bottom: 5px; height: auto;">
 		<div class="overlay"></div>
-		<div class="features-box">
+		<div class="features-box" id="featre">
 			<div class="container-fluid content-row" style="max-width: 80vw;">
 				<div class="row" style="width: 100%; align-items: center; justify-content: center; text-align: center;">
 					<center><h1 id="ft-head" style="font-size: 3.2vw; text-align: center;">What features do we provide ?</h1></center>
@@ -392,7 +410,7 @@ if (isset($_POST['submit'])) {
 		<div class="overlay"></div>
 		<div class="container pr-sec">
 			<h1 id="s4-head">Our Pricing</h1>
-			<p id="f-line">One size doesnt fit all, so we have different options to fit your needs...</p>
+			<p id="f-line">One size doesn't fit all, so we have different options to fit your needs...</p>
 
 			<div class="toggle-container">
 				<span>Online</span>
@@ -417,20 +435,20 @@ if (isset($_POST['submit'])) {
 						</span>
 					</p>
 					<ul class="monthly">
-						<li>On per student, per month basis</li>
-						<li>Maximum 12 hours exam</li>
-						<li>Enjoy appearing our exams</li>
-					</ul>
-
-					<ul class="annually">
 						<li>On per question paper basis</li>
 						<li>Exclusive question banks</li>
 						<li>Conduct exams with ease</li>
 					</ul>
+
+					<ul class="annually">
+						<li>On per student, per month basis</li>
+						<li>Maximum 12 hours exam</li>
+						<li>Enjoy appearing our exams</li>
+					</ul>
 					<a href="#reach"><button type="button" class="l-more rounded waves-effect">Learn More</button></a>
 				</div>
 
-				<div class="price-box price-box-premium" style="z-index: 1;">
+				<div id="special" class="price-box price-box-premium" style="z-index: 1;">
 					<h4>Professional</h4>
 					<p>
 						<span class="monthly">
@@ -441,15 +459,15 @@ if (isset($_POST['submit'])) {
 						</span>
 					</p>
 					<ul class="monthly">
-						<li>On per student, per month basis</li>
-						<li>Unlimited exams</li>
-						<li>Enjoy appearing our exams</li>
-					</ul>
-
-					<ul class="annually">
 						<li>On monthly basis</li>
 						<li>Unlimited question papers</li>
 						<li>Conduct exams with ease</li>
+					</ul>
+
+					<ul class="annually">
+						<li>On per student, per month basis</li>
+						<li>Unlimited exams</li>
+						<li>Enjoy appearing our exams</li>
 					</ul>
 					<a href="#reach"><button type="button" class="l-more rounded waves-effect">Learn More</button></a>
 				</div>
@@ -458,22 +476,22 @@ if (isset($_POST['submit'])) {
 					<h4>Master</h4>
 					<p>
 						<span class="monthly">
-							&#x20b9;2999.99
+							&#x20b9;1999.99
 						</span>
 						<span class="annually">
-							&#x20b9;1999.99
+							&#x20b9;2999.99
 						</span>
 					</p>
 					<ul class="monthly">
-						<li>On per student, per month basis</li>
-						<li>free parental control services</li>
-						<li>Whitelabelled app(min 100 registration)</li>
+					    <li>On yearly basis</li>
+						<li>Unlimited question papers</li>
+						<li>Conduct exams with ease</li>
 					</ul>
 
 					<ul class="annually">
-						<li>On yearly basis</li>
-						<li>Unlimited question papers</li>
-						<li>Conduct exams with ease</li>
+						<li>On per student, per year basis</li>
+						<li>Free parental control services</li>
+						<li>Whitelabelled app(min 100 registration)</li>
 					</ul>
 					<a href="#reach"><button type="button" class="l-more rounded waves-effect">Learn More</button></a>
 				</div>
@@ -485,11 +503,11 @@ if (isset($_POST['submit'])) {
 	<div class="contact-panel parallax" id="reach">
 		<!--Section: Contact v.2-->
 		<section class="mb-4" style="padding-top: 150px">
-		  <div class="overlay">  
+		  <div class="overlays">  
 			<!--Section heading-->
-			<h1 class="h1-responsive font-weight-bold text-center my-4 text-white" style="font-size: 3.2vw;">Let's talk!</h1>
+			<h1 class="h1-responsive c-head font-weight-bold text-center my-4 text-white" style="font-size: 3.2vw;">Let's talk!</h1>
 			<!--Section description-->
-			<p class="text-center w-responsive mx-auto mb-5 text-white" style="font-weight: 400; padding-bottom: 8vh; font-size: 1.2vw;"><b>Email us to purchase the above subscription plans.</b></p>
+			<p class="text-center c-line w-responsive mx-auto mb-5 text-white" style="font-weight: 400; padding-bottom: 8vh; font-size: 1.2vw;"><b>Email us to purchase the above subscription plans.</b></p>
 		  </div> 
 		  <div class="container">
 			<div class="row">
@@ -520,7 +538,7 @@ if (isset($_POST['submit'])) {
 						<!--Grid row-->
 						<div class="row" style="padding-bottom: 5vh;">
 							<div class="col-md-12">
-								<input type="text" placeholder="Subject" autocomplete="off" required name="subject" style="color: white" id="subject" class="form-control">
+								<input type="tel" placeholder="Phone number" autocomplete="off" required name="phone" style="color: white" id="phone" class="form-control">
 							</div>
 						</div>
 						<!--Grid row-->
@@ -530,7 +548,7 @@ if (isset($_POST['submit'])) {
 		
 							<!--Grid column-->
 							<div class="col-md-12">
-								<textarea type="text" autocomplete="off" required placeholder="Your message" name="message" style="color: white" id="message" rows="3" class="form-control md-textarea"></textarea>
+								<textarea type="text" autocomplete="off" required placeholder="Type your querry" name="message" style="color: white" id="message" rows="3" class="form-control md-textarea"></textarea>
 							</div>
 						</div>
 						<!--Grid row-->
@@ -555,6 +573,161 @@ if (isset($_POST['submit'])) {
 		</section>
 		<!--Section: Contact v.2-->
 		</div>
+
+		<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="margin-top: -30px;">
+
+	<div style="background-color: #6351ce;">
+	  <div class="container">
+  
+		<!-- Grid row-->
+		<div class="row py-4 d-flex align-items-center">
+  
+		  <!-- Grid column -->
+		  <div class="col-md-6 col-lg-5 main-link text-center text-md-left mb-4 mb-md-0">
+			<a href="#" style="font-size: 25px; transition: 1s ease"><span><b>PARIKSIT-RESELLER</b>
+			</span></a>
+		  </div>
+		  <!-- Grid column -->
+  
+		  <!-- Grid column -->
+		  <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+			<!-- Facebook -->
+			<a class="fb-ic">
+			  <i class="fab fa-facebook-f white-text mr-4"> </i>
+			</a>
+			<!-- Twitter -->
+			<a class="tw-ic">
+			  <i class="fab fa-twitter white-text mr-4"> </i>
+			</a>
+			<!-- Google +-->
+			<a class="gplus-ic">
+			  <i class="fab fa-google-plus-g white-text mr-4"> </i>
+			</a>
+			<!--Linkedin -->
+			<a class="li-ic">
+			  <i class="fab fa-linkedin-in white-text mr-4"> </i>
+			</a>
+			<!--Instagram-->
+			<a class="ins-ic">
+			  <i class="fab fa-instagram white-text"> </i>
+			</a>
+  
+		  </div>
+		  <!-- Grid column -->
+  
+		</div>
+		<!-- Grid row-->
+  
+	  </div>
+	</div>
+  
+	<!-- Footer Links -->
+	<div class="container sub-links text-center text-md-left mt-5">
+  
+	  <!-- Grid row -->
+	  <div class="row mt-3">
+  
+		<!-- Grid column -->
+		<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  
+		  <!-- Content -->
+		  <h6 class="text-uppercase font-weight-bold">Pariksit-reseller</h6>
+		  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		  <p>Use Pariksit-reseller's exclusive features to take your performance to the next level,
+			  and improve yourself to compete with the world. Our team will be always there to guide you
+			   and provide best services through-out your career.
+		  </p>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<!-- Grid column -->
+		<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+		  <!-- Links -->
+		  <h6 class="text-uppercase font-weight-bold">Products</h6>
+		  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		  <p>
+			<a href="#featre">Secure Distribution</a>
+		  </p>
+		  <p>
+			<a href="#featre">Online Classes</a>
+		  </p>
+		  <p>
+			<a href="#featre">Doubt Clarification</a>
+		  </p>
+		  <p>
+			<a href="#featre">Unlimited Sessions</a>
+		  </p>
+		  <p>
+			<a href="#featre">Remote Exams</a>	
+		  </p>
+		  <p>
+			<a href="#featre">Build Your Own App</a> 
+		  </p>
+		  <p>
+			<a href="#featre">Parental Control</a> 
+		  </p>
+		  <p>
+			<a href="#featre">Question Bank</a> 
+		  </p>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<!-- Grid column -->
+		<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+		  <!-- Links -->
+		  <h6 class="text-uppercase font-weight-bold">About</h6>
+		  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		  <p>
+			<a href="#!">Team</a>
+		  </p>
+		  <p>
+			<a href="#!">Terms & Conditions</a>
+		  </p>
+		  <p>
+			<a href="#!">Privacy Policy</a>
+		  </p>
+		  
+		</div>
+		<!-- Grid column -->
+  
+		<!-- Grid column -->
+		<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+		  <!-- Links -->
+		  <h6 class="text-uppercase font-weight-bold">Contact</h6>
+		  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		  <p>
+			<a href="https://goo.gl/maps/jW9YFeNbw3D9zkVe8" target="_blank"><i class="fas fa-home mr-3"></i> SD-25 Shaktinagar, infront of B-19 Koelnagar, Rourkela, Odisha</p></a>
+		  <p>
+			<a href="mailto:yogeshbndm@gmail.com"><i class="fas fa-envelope mr-3"></i> yogeshbndm@gmail.com</p></a>
+		  <p>
+			<a href="tel:+ 91 97760 68954"><i class="fas fa-phone mr-3"></i> + 91 97760 68954</p></a>
+		  <p>
+			<a href="tel:+91 70085 58336"><i class="fas fa-phone mr-3"></i> + 91 70085 58336</p></a>
+  
+		</div>
+		<!-- Grid column -->
+  
+	  </div>
+	  <!-- Grid row -->
+  
+	</div>
+	<!-- Footer Links -->
+  
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+	  <a href="https://pariksit.com/"> pariksit.com</a>
+	</div>
+	<!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
 
 
@@ -641,9 +814,12 @@ if (isset($_POST['submit'])) {
 	tl4.from("#second", 1, {x:400 , opacity:0 , ease:Power2.easeOut}, "=-1");
 	tl5.from("#s4-head", 1, {scale: -0.5 , y:250 , opacity:0 , ease:Power2.easeOut}, "=-.2");
 	tl5.from("#f-line", 1, {scale: -0.5 , y:200 , opacity:0 , ease:Power2.easeOut}, "=-0.9");
+	tl5.from(".toggle-container", 1, {scale: -0.5 , y:200 , opacity:0 , ease:Power2.easeOut}, "=-0.9");
 	tl5.from(".price-box-premium", 1, {scale: -0.5 , opacity:0 , ease:Power2.easeOut}, "=-0.8");
 	tl5.from("#low-price", 1, {x:400 , opacity:0 , ease:Power2.easeOut});
 	tl5.from("#high-price", 1, {x:-400 , opacity:0 , ease:Power2.easeOut}, "=-1");
+	tl6.from(".overlays", 1, {scale: -0.5 , y:250 , opacity:0 , ease:Power2.easeOut}, "=-.2");
+	tl6.from("#contact-form", 1, {scale: -0.2 , opacity:0 , ease:Power2.easeOut}, "=-0.8");
 
 
 
@@ -673,7 +849,7 @@ if (isset($_POST['submit'])) {
 	  .addTo(controller);  
 
 	const scene5 = new ScrollMagic.Scene({
-		triggerElement: "#contact-form"
+		triggerElement: ".contact-panel"
 	})   
 	  .setTween(tl6)
 	  .addTo(controller);

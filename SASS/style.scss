@@ -1,0 +1,241 @@
+.section-4 {
+	background: url(../images/bg-top.svg) right top no-repeat, url(../images/bg-bottom.svg) left bottom no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	position: relative;
+}
+
+.section-4 .overlay {
+	position: absolute;
+    top: 0;
+	left: 0;
+	bottom: 0;
+    width: 100%;
+    height: 100%;
+	display: block;
+	background-color: hsl(240, 78%, 98%);
+	color: hsl(232, 13%, 33%);
+	z-index: -100;
+}
+
+.pr-sec {
+	margin: auto;
+	max-width: 100%;
+	width: 1200px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pr-sec h1 {
+	color: hsl(233, 13%, 49%);
+	padding-bottom: 5vh;
+	font-size: 3.2vw;
+}
+
+#f-line {
+	color: hsl(233, 13%, 65%);
+	font-size: 1.3vw;
+	font-weight: bold;
+	padding-bottom: 15vh;
+}
+
+.toggle-container {
+	color: hsl(234, 14%, 74%);
+	margin-bottom: 40px;
+}
+
+.price-box {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	color: hsl(233, 13%, 49%);
+	padding: 30px;
+	margin: 10px;
+}
+
+.price-box.price-box-premium {
+	background-image: linear-gradient(
+		to right,
+		hsl(236, 72%, 79%),
+		hsl(237, 63%, 64%)
+	);
+	color: #fff;
+
+	transform: scale(1.15);
+}
+
+.price-box h4 {
+	margin: 0;
+}
+
+.price-box p {
+	color: hsl(232, 13%, 33%);
+	font-size: 4em;
+	font-weight: bold;
+	margin: 15px 25px;
+	width: 250px;
+}
+
+.price-box .monthly {
+	display: none;
+}
+
+.show-monthly .price-box .monthly {
+	display: block;
+}
+
+.show-monthly .price-box .annually {
+	display: none;
+}
+
+.price-box ul {
+	border-top: 1px solid hsl(234, 14%, 74%);
+	padding: 0;
+	list-style-type: none;
+}
+
+.price-box ul li {
+	border-bottom: 1px solid hsl(234, 14%, 74%);
+	font-size: 14px;
+	padding: 15px 0;
+}
+
+.price-box button {
+	background-image: linear-gradient(
+		to right,
+		hsl(236, 72%, 79%),
+		hsl(237, 63%, 64%)
+	);
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
+	padding: 15px;
+	margin-top: 10px;
+	width: 100%;
+	text-transform: uppercase;
+    transition: transform 0.5s ease;
+    
+    
+    .price-box button:hover {
+	    transform: scale(1.05);
+	    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.price-box.price-box-premium button {
+	background-image: none;
+	background-color: #fff;
+	color: hsl(237, 63%, 64%);
+}
+
+.price-box.price-box-premium ul,
+.price-box.price-box-premium ul li {
+	border-color: #f0f0f0;
+}
+.price-box.price-box-premium p {
+	color: #fff;
+}
+
+/* Pill toggle */
+.toggle-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.toggle-container label {
+	background-image: linear-gradient(
+		to right,
+		hsl(236, 72%, 79%),
+		hsl(237, 63%, 64%)
+	);
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 10px;
+	position: relative;
+	height: 30px;
+	width: 60px;
+}
+
+.toggle-container label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2.5px;
+	left: 2.5px;
+	height: 25px;
+	width: 25px;
+	transition: transform 0.4s ease;
+}
+
+.toggle-container input {
+	position: absolute;
+	left: -9999px;
+}
+
+.toggle-container input:checked + label .ball {
+	transform: translateX(30px);
+}
+
+.price-box.price-box-premium button a {
+	color: hsl(237, 63%, 64%);
+	text-decoration: none;
+}
+
+.price-box.price-box-premium button a:hover {
+	color: hsl(237, 63%, 64%);
+	text-decoration: none;
+}
+
+.price-box a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.price-box a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.submit {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #0000C9;
+	margin: auto;
+	text-transform: uppercase;
+	border-radius: 0px;
+	width: 140px; 
+	height: 50px;
+	letter-spacing: 2px;
+	transition: all 0.5s ease;
+}
+
+.submit:hover {
+	transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    
+    
+    .submit:hover i {
+	    opacity: 1;
+	    padding-left: 20px;
+    }
+}
+
+.submit i {
+	opacity: 0; 
+	margin-right: -20px; 
+	transition: 0.5s ease;
+}
