@@ -1,13 +1,16 @@
+
 <?php
 
 if (isset($_POST['submit'])) {
 	$to = "m.pariksit@gmail.com";
 	$name = $_POST['name'];
-	$from = $_POST['email'];
-	$subject = $_POST['subject'];
+	$mail = $_POST['email'];
+	$phone = $_POST['phone'];
 	$msg = $_POST['message'];
-	$header = "From:".$from;
-	if (mail($to, $subject, $msg,$header)) {
+	$subject = "Query Regarding Pariksit Reseller";
+	$sendMessage = "You have received a query as \n".$msg."\nFrom ".$name."\nWhose contact number is ".$phone." and Email is ".$mail.".";
+	$header = "From: yogesh@pariksit.com";
+	if (mail($to, $subject, $sendMessage,$header)) {
 		echo "<script>alert('Mail Sent Success');</script>";
 		
 	}else{
